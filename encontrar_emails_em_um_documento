@@ -1,0 +1,8 @@
+import re
+fname = input ('Enter file: ')
+hand = open (fname)
+message = hand.read()
+#print(message)
+
+y = re.findall('\S+@\S+', message)
+print (y)
