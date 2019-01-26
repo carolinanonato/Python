@@ -1,0 +1,17 @@
+name = str (input ('Qual seu nome? '))
+
+def greet (lang):
+    if lang == 'es':
+        print('Hola',  name)
+    elif lang == 'fr':
+        print('Bonjour',  name)
+    elif lang == 'in':
+        print('Hello',  name)
+
+
+while True:
+    greet (str (input('QUAL LINGUA? [ES/FR/IN]')))
+    w = (input ('DESEJA CONTINUAR? s/n'))
+    if w == 'n':
+        print('FIM')
+        break
