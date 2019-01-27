@@ -4,11 +4,11 @@ input = '''
     <users>
         <user x="2">
             <id>001</id>
-            <name>Chuck</name>
+            <name>Carol</name>
         </user>
         <user x="7">
             <id>009</id>
-            <name>Brent</name>
+            <name>Bruno</name>
         </user>
     </users>
 </stuff>'''
@@ -18,6 +18,6 @@ lst = stuff.findall('users/user')
 print('User count:', len(lst))
 
 for item in lst:
-    print('Name', item.find('name').text)
+    print('Nome', item.find('name').text)
     print('Id', item.find('id').text)
     print('Attribute', item.get('x'))
