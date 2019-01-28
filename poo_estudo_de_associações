@@ -1,0 +1,31 @@
+class Pessoa:
+    def __init__(self, nome, peso, cao):
+        self.nome = nome
+        self.peso = peso
+        self.cao = cao
+
+    def treinar(self):
+        self.cao.patinha()
+        self.cao.latir()
+        self.cao.senta()
+
+class Cachorro:
+    def __init__(self, name, cor):
+        self.nome = name
+        self.cor = cor
+
+    def patinha (self):
+        print (f'{self.nome} extendeu a patinha...')
+
+    def latir (self):
+        print ('WOOF!!')
+
+    def senta (self):
+        print (f'{self.nome} sentou e está esperando...')
+
+Croissant = Cachorro ('Croissant', 'dourada')
+Carol = Pessoa ('Carol', 60, Croissant)
+
+print (Carol.cao.cor)
+print (Carol.treinar())
+print(Croissant.latir())
